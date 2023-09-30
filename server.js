@@ -9,11 +9,6 @@ app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 
-//http://localhost:3000/
-app.get('/', function (req, res) {
-    res.send("<h1>Home Page</h1>")
-})
-
 //http://localhost:3000/profile
 app.post('/profile', (req, res) => {
   res.send("<h1>Profile page</h1>")
