@@ -10,6 +10,10 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 app.use(express.static('views'))
 
+app.get('/', (req,res) => {
+  res.sendFile('./views/index.html')
+})
+
 //http://localhost:3000/profile
 app.post('/profile', (req, res) => {
   res.send("<h1>Profile page</h1>")
