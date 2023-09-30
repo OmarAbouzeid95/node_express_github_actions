@@ -16,8 +16,7 @@ app.get('/', function (req, res) {
 
 //http://localhost:3000/profile
 app.post('/profile', (req, res) => {
-  console.log(req.body)
-  res.json(req.body)
+  res.send("<h1>Profile page</h1>")
 })
 
 //http://localhost:3000/name
@@ -38,7 +37,6 @@ app.get("/user/:id", (req, res)=> {
 
 //http://localhost:3000/valueofday/1980-01-24
 app.get("/valueofday/:year(\\d{4})-:month(\\d{2})-:day(\\d{2})", (req, res) => {
-  console.log(req.params)
   res.send(req.params)
 });
   
