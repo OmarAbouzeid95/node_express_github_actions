@@ -21,8 +21,8 @@ app.post('/profile', (req, res) => {
 })
 
 //http://localhost:3000/name
-app.post('/name', (req, res) => {
-  res.send(<h1>c0872032, Omar Abouzeid Ali</h1>)
+app.get('/name', (req, res) => {
+  res.send("<h1>c0872032, Omar Abouzeid Ali</h1>")
 })
 
 //http://localhost:3000/admin
